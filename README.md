@@ -14,5 +14,8 @@
 # 技术选型
 python
 
+# 需求管理
+使用github issues进行需求管理，需求管理流程为提出需求，评审需求，开发需求，验收需求。
+
 # 更新日志
-1.接受文本输入并保存 6.19 zhouchengyu Done
+1.增加kv存储功能 6.19 zhouchengyu Done
