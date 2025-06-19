@@ -19,3 +19,4 @@ python
 
 # 更新日志
 1.增加kv存储功能 6.19 zhouchengyu Done
+2.增加大模型sdk模块 6.20 zhouchengyu 参考[字节火山引擎大模型使用手册](https://www.volcengine.com/docs/82379/1399008) Done
