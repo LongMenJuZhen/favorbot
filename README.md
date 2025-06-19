@@ -1,5 +1,6 @@
 # favorbot
 让你的收藏夹不再吃灰
+favordevGroup
 
 # description
 可以收藏内容，ai总结，并推荐
