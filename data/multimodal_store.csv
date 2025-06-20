@@ -2,3 +2,23 @@ record_id,content,desc,create_time,type,class,extra
 ,"git init 初始化仓库 git clone [url] 克隆远程库 git add [file] 添加文件到暂存区 git commit -m ""msg"" 提交到本地仓库 git status 查看状态 git pull 拉取远程更新 git push 推送本地提交 git branch 查看分支 git checkout -b [branch] 创建切换分支 git merge [branch] 合并分支 git log 查看提交历史 git reset --hard [commit] 版本回退 git stash 临时保存修改
  .gitignore 定义忽略文件","git init 初始化仓库 git clone [url] 克隆远程库 git add [file] 添加文件到暂存区 git commit -m ""msg"" 提交到本地仓库 git status 查看状态 git pull 拉取远程更新 git push 推送本地提交 git branch 查看分支 git checkout -b [branch] 创建切换分支 git merge [branch] 合并分支 git log 查看提交历史 git reset --hard [commit] 版本回退 git stash 临时保存修改
  .gitignore 定义忽略文件",2025-06-20 10:23:44.256353,text,,
+,"[{'role': 'user', 'content': 'https://zhuanlan.zhihu.com/p/637960746'}]","该网页是知乎专栏文章《CMU 15-445/645 (Spring 2023) Database Systems 通关指北》，作者为Michael Xu。  
+
+### **内容总结**  
+1. **课程推荐与背景**：  
+   - 介绍CMU开源数据库课程15-445/645（2023年春季），强调其资源丰富（含讲义、作业、自动评测系统等），相当于“免费享受CMU课程体验”，感谢课程团队及开源贡献者。  
+
+2. **学习经验与建议**：  
+   - **核心方法**：推荐“独立完成”，即仅使用课程自带资料（讲义、2022年秋季 lecture 视频、刘学一的笔记专栏等），不参考外部解决方案，通过自建测试、分析日志、复现错误等方式调试代码。  
+   - **问题解决**：建议先查阅课程Discord社区历史记录，若未找到答案再按“提问的智慧”原则提问。  
+   - **心态**：强调“相信机器正确”“Bug可复现可解决”，需掌握合适的调试工具与方法。  
+
+3. **其他推荐**：  
+   - 提及《CS自救指北》《BusTub养成记》《上海交通大学生存手册》等资源，认为对学习有启发。  
+
+### **用途**  
+- **课程推广**：向数据库学习者推荐CMU 15-445/645这门高质量开源课程。  
+- **学习指南**：分享作者独立通关课程的经验，提供具体学习方法（如调试技巧、资源使用），帮助读者高效完成课程项目（如B+树等实验）。  
+- **社区引导**：引导学习者合理利用课程配套资源（如Discord社区）解决问题，培养自主解决问题的能力。  
+
+整体定位为“数据库课程自学攻略”，适合希望系统学习数据库原理并实践的学生或开发者参考。",2025-06-20 11:11:10.594255,url,,

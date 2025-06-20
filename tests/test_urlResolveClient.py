@@ -1,14 +1,14 @@
 import unittest
 
-from src.llmClient.doubaoClient import DoubaoClient
+from src.llmClient.urlResolveClient import UrlResolveClient
 
 class TestDoubaoClient(unittest.TestCase):
     def setUp(self):
-        self.client = DoubaoClient()
+        self.client = UrlResolveClient()
 
     def test_call(self):
         messages = [
-            {"role": "user", "content": "你好"}
+            {"role": "user", "content": "https://zhuanlan.zhihu.com/p/637960746"}
         ]
 
         # 测试大模型调用

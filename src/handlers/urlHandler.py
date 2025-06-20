@@ -1,6 +1,7 @@
 from .baseHandler import BaseHandler
 from src.store.multiModalStore import MultiModalStore
-import time
+from src.llmClient.urlResolveClient import UrlResolveClient
+from datetime import datetime
 
 class UrlHandler(BaseHandler):
 
@@ -8,4 +9,22 @@ class UrlHandler(BaseHandler):
         self.db = MultiModalStore(db_name)
 
     def handle(self, url):
-        pass
+        client = UrlResolveClient()
+        messages = [
+            {"role": "user", "content": f"{url}"}
+        ]
+
+        # 测试大模型调用
+        resp = client.call(messages)
+
+        dic = {
+            'record_id':'',
+            'content':url,
+            'desc':resp,
+            'create_time':datetime.now(),
+            'type':'url',
+            'class':'',
+            'extra':''
+        }
+
+        self.db.store.insert(dic)
