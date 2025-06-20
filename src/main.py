@@ -2,19 +2,13 @@ import os
 import sys
 from cgitb import handler
 
+from src.handlers.imageHandler import ImageHandler
 from store.kvstore import KVStore
 from llmClient.doubaoClient import DoubaoClient
 from handlers.txtHandler import TXTHandler
 from handlers.urlHandler import UrlHandler
 
 if __name__ == '__main__':
-    kvstore = KVStore('kvstore.txt')
-
-    # 示例调用
-    kvstore.db_set("Website1", "https://zhuanlan.zhihu.com/p/637960746")
-
-    print(kvstore.db_get("Website1"))
-
     # client = DoubaoClient()
     # messages = [
     #     {"role": "user", "content": "你好"}
@@ -31,12 +25,14 @@ if __name__ == '__main__':
      #    handler.handle(input_s)
 
     # handler = UrlHandler('multimodal_store.csv')
-    # messages = [
-    #     {"role": "user", "content": "https://zhuanlan.zhihu.com/p/637960746"}
-    # ]
     #
     # # 测试大模型调用
-    # resp = handler.handle(messages)
+    # resp = handler.handle("https://zhuanlan.zhihu.com/p/637960746")
+
+    handler = ImageHandler('multimodal_store.csv')
+    resp = handler.handle("/Users/rain/Project/llm/favorbot/data/images/test1.png")
+    print(resp)
+
 
 
 
