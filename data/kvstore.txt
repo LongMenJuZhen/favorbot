@@ -1,2 +1,1 @@
-Website1=https://zhuanlan.zhihu.com/p/637960746
-Website2=https://zhuanlan.zhihu.com/p/637960746
+classes=[{"class": "book", "desc": "喜欢的书"}, {"class": "数据库", "desc": ""},  {"class": "向量数据库", "desc": ""}]
