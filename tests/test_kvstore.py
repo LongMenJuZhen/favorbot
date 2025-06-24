@@ -1,6 +1,6 @@
 import unittest
 import os
-from src.store.kvstore import KVStore
+from store.kvstore import KVStore
 
 class TestKVStore(unittest.TestCase):
     def setUp(self):

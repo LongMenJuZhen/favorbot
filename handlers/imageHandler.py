@@ -1,8 +1,8 @@
 import os
 
 from .baseHandler import BaseHandler
-from src.store.multiModalStore import MultiModalStore
-from src.llmClient.imageResolveClient import ImageResolveClient, encode_image
+from store.multiModalStore import MultiModalStore
+from llmClient.imageResolveClient import ImageResolveClient, encode_image
 from datetime import datetime
 
 class ImageHandler(BaseHandler):

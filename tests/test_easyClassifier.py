@@ -1,8 +1,8 @@
 import unittest
 import json
 
-from src.classify.easyClassifier import EasyClassifier
-from src.store.kvstore import KVStore
+from classify import EasyClassifier
+from store import KVStore
 
 class TestEasyClassifier(unittest.TestCase):
     def setUp(self):

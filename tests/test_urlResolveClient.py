@@ -1,6 +1,6 @@
 import unittest
 
-from src.llmClient.urlResolveClient import UrlResolveClient
+from llmClient.urlResolveClient import UrlResolveClient
 
 class TestDoubaoClient(unittest.TestCase):
     def setUp(self):

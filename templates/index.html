@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>favotbot——你的智能收藏夹助手</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="title-card">
+            <h1>favotbot</h1>
+            <p>你的智能收藏夹助手</p>
+            <!-- 新增聊天对话框 -->
+            <div class="chat-container">
+                <div class="chat-header">AI助手</div>
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message bot-message">
+                        你好！我是favotbot助手，有什么可以帮您的吗？
+                    </div>
+                </div>
+                <!-- 修改chat-input部分 -->
+                <div class="chat-input">
+                    <input type="text" id="user-input" placeholder="输入你的问题...">
+                    <label class="upload-button">📷</label>
+                    <input type="file" id="image-upload" accept="image/*" style="display:none">
+                    <button id="send-button">发送</button>
+                </div>
+                <div id="image-preview" style="display:none; margin-top:10px;">
+                    <img id="preview-img" style="max-width:200px; max-height:200px;">
+                    <button id="remove-image">×</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>
