@@ -22,7 +22,7 @@ if __name__ == '__main__':
     # resp = handler.handle("https://zhuanlan.zhihu.com/p/637960746")
 
     handler = ImageHandler('multimodal_store.csv')
-    resp = handler.handle("/Users/rain/Project/llm/favorbot/data/images/test1.png")
+    resp = handler.handle("/Users/rain/Project/llm/favorbot/data/images/test1.png", "收藏")
     print(resp)
 
 

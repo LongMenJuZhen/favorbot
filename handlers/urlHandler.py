@@ -28,3 +28,5 @@ class UrlHandler(BaseHandler):
         }
 
         self.db.store.insert(dic)
+
+        return resp
