@@ -1,6 +1,6 @@
 import unittest
 import os
-from src.store.csvstore import CSVStore  # 假设CSVStore类在csvstore模块中
+from store.csvstore import CSVStore  # 假设CSVStore类在csvstore模块中
 
 
 class TestCSVStore(unittest.TestCase):

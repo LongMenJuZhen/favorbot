@@ -1,6 +1,6 @@
 import unittest
 
-from src.llmClient.doubaoClient import DoubaoClient
+from llmClient.doubaoClient import DoubaoClient
 
 class TestDoubaoClient(unittest.TestCase):
     def setUp(self):

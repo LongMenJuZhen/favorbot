@@ -1,8 +1,8 @@
 import os
 
 from .baseHandler import BaseHandler
-from src.store.multiModalStore import MultiModalStore
-from src.llmClient.imageResolveClient import ImageResolveClient, encode_image
+from store.multiModalStore import MultiModalStore
+from llmClient.imageResolveClient import ImageResolveClient, encode_image
 from datetime import datetime
 
 class ImageHandler(BaseHandler):
@@ -10,7 +10,7 @@ class ImageHandler(BaseHandler):
         self.db = MultiModalStore(db_name)
 
 
-    def handle(self, image_path):
+    def handle(self, image_path, message):
         client = ImageResolveClient()
 
         # 将图片转为Base64编码
@@ -44,12 +44,12 @@ class ImageHandler(BaseHandler):
 
         dic = {
             'record_id':'',
-            'content':image_path,
+            'content':message,
             'desc':resp,
             'create_time':datetime.now(),
             'type':'image',
             'class':'',
-            'extra':''
+            'extra':image_path
         }
 
         self.db.store.insert(dic)

@@ -1,12 +1,4 @@
-import os
-import sys
-from cgitb import handler
-
-from src.handlers.imageHandler import ImageHandler
-from store.kvstore import KVStore
-from llmClient.doubaoClient import DoubaoClient
-from handlers.txtHandler import TXTHandler
-from handlers.urlHandler import UrlHandler
+from handlers.imageHandler import ImageHandler
 
 if __name__ == '__main__':
     # client = DoubaoClient()
@@ -30,7 +22,7 @@ if __name__ == '__main__':
     # resp = handler.handle("https://zhuanlan.zhihu.com/p/637960746")
 
     handler = ImageHandler('multimodal_store.csv')
-    resp = handler.handle("/Users/rain/Project/llm/favorbot/data/images/test1.png")
+    resp = handler.handle("/Users/rain/Project/llm/favorbot/data/images/test1.png", "收藏")
     print(resp)
 
 

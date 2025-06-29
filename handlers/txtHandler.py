@@ -1,5 +1,5 @@
 from .baseHandler import BaseHandler
-from src.store.multiModalStore import MultiModalStore
+from store.multiModalStore import MultiModalStore
 from datetime import datetime
 
 class TXTHandler(BaseHandler):

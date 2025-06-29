@@ -1,6 +1,6 @@
 from .baseHandler import BaseHandler
-from src.store.multiModalStore import MultiModalStore
-from src.llmClient.urlResolveClient import UrlResolveClient
+from store.multiModalStore import MultiModalStore
+from llmClient.urlResolveClient import UrlResolveClient
 from datetime import datetime
 
 class UrlHandler(BaseHandler):
@@ -28,3 +28,5 @@ class UrlHandler(BaseHandler):
         }
 
         self.db.store.insert(dic)
+
+        return resp

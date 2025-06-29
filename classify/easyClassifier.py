@@ -1,7 +1,7 @@
 import json
 
 from .baseClassifier import BaseClassifier
-from src.llmClient.doubaoClient import DoubaoClient
+from llmClient.doubaoClient import DoubaoClient
 
 class EasyClassifier(BaseClassifier):
     def __init__(self):

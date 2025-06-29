@@ -1,6 +1,6 @@
 import unittest
 
-from src.llmClient.imageResolveClient import ImageResolveClient
+from llmClient.imageResolveClient import ImageResolveClient
 
 class TestImageResolveClient(unittest.TestCase):
     def setUp(self):
